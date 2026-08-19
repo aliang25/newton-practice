@@ -22,7 +22,7 @@ def newton(x_0, epsilon=0.00001):
 
     return x_t
 
-
+# testing the function
 if __name__ == "__main__":
     print(newton(x**2))
 
