@@ -1,12 +1,15 @@
 def deriv(f, x, eps = 1e-5):
+    """Hello World"""
     return (f(x+eps) - f(x)) / eps
 
 
 def deriv2(f, x, eps = 1e-5):
+    """Hello World"""
     return (deriv(f, x+eps, eps) - deriv(f, x, eps)) / eps
 
 
 def optimize(x0, f, tol =1e-4):
+    """Hello World"""
     x_new = x0 - deriv(f, x0)/ deriv2(f, x0)
     x = x0
     while abs(x_new - x) > tol:
